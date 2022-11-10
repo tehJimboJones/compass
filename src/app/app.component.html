@@ -1,0 +1,18 @@
+<div>Hello world!</div>
+
+<div class="p-fluid grid">
+  <div class="field col-12 md:col-4">
+    <span class="p-float-label">
+      <p-inputNumber
+        id="originLatitudeInput"
+        [(ngModel)]="origin.Coordinates.latitude"
+        mode="decimal"
+        [minFractionDigits]="0"
+        [maxFractionDigits]="5"
+      ></p-inputNumber>
+      <label for="originLatitudeInput">Origin Latitude</label>
+    </span>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
